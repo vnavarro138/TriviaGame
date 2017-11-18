@@ -22,7 +22,7 @@ var clockRunning = false;
 var timeRemaining = 120 ; //120 seconds at start of timer
 //TO DO: create an array with all the correct answers
 var triviaGuesses = [];
-var triviaAnswers = ["d","d"];
+var triviaAnswers = ["d","d","a","c","b"];
 //TO DO: click start & counter counts down from 120 seconds
 $("#start").click(startGame);
 
@@ -43,9 +43,30 @@ function startGame() {
 //TO DO: create a button for them to select their answer
 //TO DO: capture the click and store their answers into an array
 //Add an on click listener to all elements that have the class "number"
-      $(".answer").on("click", function() {
-        triviaGuesses.push(this.value);
+      $(".answer-1").on("click", function(index,value) {
+        triviaGuesses[0] = this.value;
         console.log(this.value);
+        console.log(triviaGuesses);
+      });
+      $(".answer-2").on("click", function(index,value) {
+        triviaGuesses[1] = this.value;
+        console.log(this.value);
+        console.log(triviaGuesses);
+      });
+       $(".answer-3").on("click", function(index,value) {
+        triviaGuesses[2] = this.value;
+        console.log(this.value);
+        console.log(triviaGuesses);
+      });
+        $(".answer-4").on("click", function(index,value) {
+        triviaGuesses[3] = this.value;
+        console.log(this.value);
+        console.log(triviaGuesses);
+      });
+        $(".answer-5").on("click", function(index,value) {
+        triviaGuesses[4] = this.value;
+        console.log(this.value);
+        console.log(triviaGuesses);
       });
 //TO DO: only one answer per question is allowed to be selected
 //TO DO: allow user to select a different choice
