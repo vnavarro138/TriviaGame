@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>HARRY POTTER TRIVIA</title>
+<!-- Added link to the jQuery library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Link to Eric Meyer's Reset CSS-->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<!-- link to googlefont -->
+<link href="https://fonts.googleapis.com/css?family=Skranji" rel="stylesheet">
+<!-- Link to custom CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+  <body>
+<div class="row">
+  <div class="col-md-12">
+    <h1>HARRY POTTER TRIVIA!</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+<img id="start" src="assets/images/start.png">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+<h2>Click Crest to Start!</h2><br>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+<h2>Seconds Remaining: </h2><br>
+<h2><span id="time-left"></span></h2>
+  </div>
+</div>
+<br><br>
+<div id ="quiz">
+	<div class="row">
+	  <div class="col-md-12">
+	<h4>Who was not a member of the 'Slug Club'?</h4><br>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-md-3">
+        <button id="button-a" class="btn btn-primary answer" value="a"><h5>Harry Potter</h5></button>
+	  </div>
+	  <div class="col-md-3">
+        <button id="button-b" class="btn btn-primary answer" value="b"><h5>Hermoine Granger</h5></button>
+	  </div>
+	    <div class="col-md-3">
+        <button id="button-c" class="btn btn-primary answer" value="c"><h5>Cormac McLaggen</h5></button>
+	  </div>
+	    <div class="col-md-3">
+        <button id="button-d" class="btn btn-primary answer" value="d"><h5>Ron Weasley</h5></button>
+	  </div>
+	</div>
+<div class="row">
+	  <div class="col-md-12">
+	<h4>Who destroys horcrux first?</h4><br>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-md-3">
+        <button id="button-a" class="btn btn-primary answer" value="a"><h5>Albus Dumbledore</h5></button>
+	  </div>
+	  <div class="col-md-3">
+        <button id="button-b" class="btn btn-primary answer" value="b"><h5>Neville Longbottom</h5></button>
+	  </div>
+	    <div class="col-md-3">
+        <button id="button-c" class="btn btn-primary answer" value="c"><h5>Hermoine Granger</h5></button>
+	  </div>
+	    <div class="col-md-3">
+        <button id="button-d" class="btn btn-primary answer" value="d"><h5>Harry Potter</h5></button>
+	  </div>
+	</div>
+</div>
+
+    <!-- Link to javascript -->
+<script src="assets/javascript/app.js"></script>
+  
+
+  </body>
+</html>
