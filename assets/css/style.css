@@ -28,6 +28,23 @@ h2, h4, h5 {
 #quiz {
 	display: none;
 }
+#results {
+	display: none;
+}
 .btn {
 	margin-left: 120px;
+}
+/*.btn:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+
+.btn:hover {
+    background-color: #3e8e41;
+}
+/*answered this class will have a green. in jquery, do a .button.click(function() */
+.btn.selected {
+    background-color: green;
+}
+
+.btn.incorrect {
+    background-color: red;
 }
